@@ -11,6 +11,9 @@ print(lista)
 (lista.reverse())
 print(lista[::2])
 
+#cambia la posicion
+
 lista.pop()
 print(lista)
 
+#lista con repeticion de los elementos
