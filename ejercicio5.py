@@ -3,25 +3,33 @@
 #En caso de no recibir un argumento, debe mostrar información acerca de cómo utilizar el script.
 #El objetivo del script es descomponer el número en unidades, decenas, centenas, miles... tal que por ejemplo si se introduce el número 3287:
 
+
 import sys
 
-def pedir_numero():
-    while True:
-        try:
-            numero= int(input("Introduce un número entero: "))
-        except:
-            sys.stderr, print("Solo están autorizados los caracteres 0-9")
-        else:
-            return str(numero)
+def descomposicion():
+    print("Introduce un número entero positivo de 4 cifras")
 
-def descomposicion(numero):
-    contador = 0
-    while True:
-        for digito in numero:
-            contador+=1
-            print((digito.ljust(int(contador), '0')).zfill(len(numero)), )
-        if contador >= len(numero):
-            break
+    numero = input("Tu número: ")
+    if len(numero) != 4:
+        print("Tu número no es válido, debe contener 4 dígitos")
+    else:
+        for i in range(3, -1, -1):
+            res = numero[i]
+            if i == 0:
+                n ="1000"
+                m = n.replace("1", res)
+                print(m)
+            elif i == 1:
+                n ="0100"
+                m = n.replace("1", res)
+                print(m)
+            elif i == 2:
+                n ="0010"
+                m = n.replace("1", res)
+                print(m)
+            elif i == 3:
+                n ="0001"
+                m = n.replace("1", res)
+                print(m)
 
-descomposicion(pedir_numero()[::-1])
-
+descomposicion()
