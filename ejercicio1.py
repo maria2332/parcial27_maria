@@ -4,15 +4,13 @@
 #*Realiza una función llamada funcion2 para que calcule la siguiente operación para que el resultado final sea igual a catorce ope
 #*Realiza una función llamda funcion3 para pedir al usuario que introduzca su edad, y después imprimir en la pantalla si es meyor de edad o no
 
-def mayusculas(var_1):
-    var_1 = [x.upper() for x in var_1]
-    print(var_1)
-    print(len(var_1))
-    numero = (len(var_1) / 7)
-    print(round(numero,4))
-var_1 = ["Módulo 1 de Python "]
-mayusculas(var_1)
     
+var_1 = "Módulo 1 de Python "
+
+print(var_1.upper())
+print(var_1.lower())
+print(round((len(var_1)/7), 4))
+
 
 
 def funcion1():
