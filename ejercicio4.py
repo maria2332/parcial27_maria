@@ -6,11 +6,11 @@
 #Crea una nueva lista con la repetición de los elemento de la lista guardada en el paso anterior.
 
 lista = ["pala", 7, True, 7.5]
-
-lista[::-1][1::2]
 print(lista)
+
+(lista.reverse())
+print(lista[::2])
 
 lista.pop()
 print(lista)
 
-print(lista.append(lista[0]))
