@@ -1,3 +1,5 @@
+import sys
+
 def pedir_numero():
     while True:
         try:
