@@ -8,6 +8,9 @@
 lista = ["pala", 7, True, 7.5]
 
 lista[::-1][1::2]
+print(lista)
 
+lista.pop()
+print(lista)
 
 print(lista.append(lista[0]))
