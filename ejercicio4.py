@@ -5,7 +5,7 @@
 #Elimina el último elemento de la lista modificada en el paso anterior.
 #Crea una nueva lista con la repetición de los elemento de la lista guardada en el paso anterior.
 
-lista = ["string", 1, True, 1.5]
+lista = ["pala", 7, True, 7.5]
 
 lista[::-1][1::2]
 
