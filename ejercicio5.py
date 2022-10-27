@@ -1,8 +1,11 @@
 def pedir_numero():
-    num = input("Tu número: ")
-    if len(num) != 4:
-        print("Tu número no es válido")
-        return str(num)
+    while True:
+        try:
+            numero= int(input("Introduce un número entero: "))
+        except:
+            sys.stderr, print("Solo están autorizados los caracteres 0-9")
+        else:
+            return str(numero)
 
 def descomposicion(numero):
     contador = 0
@@ -14,3 +17,4 @@ def descomposicion(numero):
             break
 
 descomposicion(pedir_numero()[::-1])
+

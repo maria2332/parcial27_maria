@@ -11,7 +11,7 @@ def modificar():
   lista2=[]
   for n in lista1:
     if n % 2 == 0:
-      lista2.append
+      lista2.append(n)
     else:
       pass
 
